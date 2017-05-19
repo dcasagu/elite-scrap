@@ -31,7 +31,7 @@ elite.findHd().then(function(resultados){
 ## Busqueda por cadena de texto
 ```javascript
 var elite = require('elite-scrap');
-elite.findBySearch('Juego de tronos').then(function(resultados){
+elite.findBySearch('Some stuff').then(function(resultados){
     console.log(resultados);
 });
 ```
@@ -40,7 +40,7 @@ elite.findBySearch('Juego de tronos').then(function(resultados){
 ```javascript
 var elite = require('elite-scrap');
 /*Parámetro 2 es el numero de pagina (en EliteTorrent de los que se muestran resultados*/
-elite.findBySearch('Juego de tronos',2).then(function(resultados){
+elite.findBySearch('Some stuff',2).then(function(resultados){
     console.log(resultados);
 });
 
