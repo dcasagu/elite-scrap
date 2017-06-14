@@ -1,6 +1,6 @@
 {
   "name": "elite-scrap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/theroich/elite-scrap"
-},
+    "type": "git",
+    "url": "https://github.com/theroich/elite-scrap"
+  },
   "keywords": [
     "Elite torrent",
     "torrent",
