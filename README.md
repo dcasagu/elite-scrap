@@ -1,5 +1,7 @@
 # ELITE-SCRAPER
-Scraper de EliteTorrent
+
+Scraper de EliteTorrent. Devuelve las principales paginas y busquedas de Elite torrent en JSON
+
 ## Buscar por secciones
 ```javascript
 var elite = require('elite-scrap');

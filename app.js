@@ -77,10 +77,12 @@ function findTorrents(option,page){
             var results = _(res).map(function(html){
                 return cheerio.load(html);
             }).map(function($){
+                var description = $('meta[name=Description]').attr('content').split("Sinopsis")[1];
+                description = description ? description.replace(/\r\n/,"").replace(/\:\s/,""): "";
                 return {
                     title : $('#box-ficha > h2').html(),
                     image: domain+'/'+$('#box-ficha > .secc-izq > img').attr('src'),
-                    desc: (_($('#box-ficha > .secc-ppal > .descrip').text().split('\n')).last().split(':')[1]) ? (_($('#box-ficha > .secc-ppal > .descrip').text().split('\n')).last().split(':')[1]).trim() : '',
+                    desc: description,
                     magnet: $($('.enlace_torrent')[1]).attr('href')
                 }
             }).value();
