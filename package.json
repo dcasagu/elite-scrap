@@ -8,6 +8,17 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/theroich/elite-scrap"
+},
+  "keywords": [
+    "Elite torrent",
+    "torrent",
+    "scraper",
+    "api",
+    "Elite"
+  ],
   "dependencies": {
     "async": "^2.4.1",
     "cheerio": "^0.22.0",
