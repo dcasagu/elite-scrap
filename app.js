@@ -79,9 +79,10 @@ function findTorrents(option,page){
             }).map(function($){
                 var description = $('meta[name=Description]').attr('content').split("Sinopsis")[1];
                 description = description ? description.replace(/\r\n/,"").replace(/\:\s/,""): "";
+
                 return {
-                    title : $('#box-ficha > h2').html(),
-                    image: domain+'/'+$('#box-ficha > .secc-izq > img').attr('src'),
+                    title : $('h2').html(),
+                    image: domain+'/'+$('.secc-izq > img').attr('src'),
                     desc: description,
                     magnet: $($('.enlace_torrent')[1]).attr('href')
                 }
